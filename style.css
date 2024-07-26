@@ -30,6 +30,20 @@ ul{
 .nav__list_item{
     margin-right: 31px;
 }
+.burger{
+    width: 78px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.burger__line{
+    margin-bottom: 6px;
+    background-color: rgb(196, 196, 196);
+    width: 100%;
+    height: 10px;
+}
 .hero__block{
     background: rgb(44, 44, 44);
 }
@@ -57,13 +71,9 @@ ul{
     padding: 60px 0 99px;
 }
 .about__autor{
-    position: absolute;
     width: 287px;
     height: 49px;
-    left: 497px;
-    right: 77px;
-    top: 674px;
-    bottom: -212px;
+    text-align: center;
 }
 .about__content{
     display: flex;
@@ -148,4 +158,118 @@ ul{
 }
 .footer__item{
     margin-right: 18px;
+}
+.performance{
+    background-color: rgb(62, 62, 62);
+}
+.performance__heading{
+    text-align: center;
+    margin-bottom: 21px;
+}
+.performance__text{
+    margin-left: 59px;
+}
+.tasks{
+    background-color: rgb(53, 53, 53);
+}
+.tasks__heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tasks__list_item{
+    margin-bottom: 20px;
+}
+.tasks__list_img{
+    margin-left: 54px;
+}
+.quote{
+    background-color: rgb(67, 67, 67);
+}
+.quote__img{
+    margin-right: 16px;
+}
+.content-btn2{
+    width: 300px;
+    height: 49px;
+    left: 677px;
+    right: -677px;
+    top: 482px;
+    bottom: -482px;
+    border-radius: 6px;
+    background: rgb(36, 125, 10);
+}
+.history{
+    background-color: rgb(30, 30, 30);
+}
+.history__heading{
+    color: rgb(73, 201, 35);
+    text-align: center;
+}
+.history__content{
+    display: flex;
+    height: 350px;
+}
+.history__1993_1995, .history__1996_1999, .history__2002_2005, .history__2007_2010, .history__2011_2013, .history__2016_2020{
+    max-width: 400px;
+}
+.history__1993_1995, .history__2002_2005, .history__2011_2013{
+    align-self: flex-start;
+}
+.history__1996_1999, .history__2007_2010, .history__2016_2020{
+    align-self: flex-end;
+    margin-left: 15px;
+}
+
+
+
+@media (max-width:834px)
+{
+    .burger{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .container{
+        max-width: 700px;
+    }
+    .container_hero{
+        flex-direction: column;
+    }
+    .hero__block_content{
+        text-align: center;
+    }
+    .hero__block_content-header{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container_about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about__content{
+        display: block;
+    }
+    .about__autor{
+        width: 100%;
+    }
+    .video__video{
+        width: 600px;
+    }
+    .about__text{
+        width: 100%;
+    }
+    .galery__item{
+        width: 100%;
+        height: 100%;
+    }
+    .container__footer{
+        flex-direction: column;
+    }
+    .footer__content{
+        margin: 20px;
+    }
+    .footer__title{
+        text-align: center;
+    }
 }
